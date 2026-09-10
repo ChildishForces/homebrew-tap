@@ -5,26 +5,26 @@
 class Jst < Formula
   desc "Convert JSON Schema to Zod, TypeScript, Pydantic, Swift, and Kotlin"
   homepage "https://github.com/ChildishForces/json-schema-transformer"
-  version "0.2.0"
+  version "0.2.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ChildishForces/json-schema-transformer/releases/download/v#{version}/jst-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "68d1c861046dfb37b7e136ea548b1ca913b93a129818cbbf5829d200281657a6"
+      sha256 "62f763fcf6061e6968c39b8b7d5317924f7c2d357e1fbc35916feac685939145"
     else
       url "https://github.com/ChildishForces/json-schema-transformer/releases/download/v#{version}/jst-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "cd8803eea3f1721c599778c51e7372cd18b771a79fbad5748a3844482a001fda"
+      sha256 "b78d4ffc9ca31c8aa9f6c0981e20df2dfda86d2603b2e8d0f7d97455014152b7"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/ChildishForces/json-schema-transformer/releases/download/v#{version}/jst-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d58311447baca29154582d2787f894428cacdf766c03562a48535ca0f112494e"
+      sha256 "14984b7ee41efbd837b941f3ca70a14b9481797fcbe3b9d2df75c94cb39b8d11"
     else
       url "https://github.com/ChildishForces/json-schema-transformer/releases/download/v#{version}/jst-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "fed67ee15fe47630474170ba548f6aad54baad672313c5fc899aee022728e18c"
+      sha256 "a8accbfd1d6e0399ec37cf9a051d3c8b80b060e85c249e55e22a33c7cd7126d2"
     end
   end
 
